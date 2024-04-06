@@ -1,11 +1,10 @@
+#ifdef SHOULD_COMPILE_LOOKIN_SERVER
 //
 //  LKS_MultiplatformAdapter.m
 //  
 //
 //  Created by nixjiang on 2024/3/12.
 //
-
-
 
 #import "LKS_MultiplatformAdapter.h"
 #import <UIKit/UIKit.h>
@@ -89,3 +88,5 @@
 }
 
 @end
+
+#endif /* SHOULD_COMPILE_LOOKIN_SERVER */
