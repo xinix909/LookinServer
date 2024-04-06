@@ -8,6 +8,7 @@ Pod::Spec.new do |spec|
   spec.author       = { "Li Kai" => "lookin@lookin.work" }
   spec.ios.deployment_target  = "9.0"
   spec.tvos.deployment_target  = '9.0'
+  spec.visionos.deployment_target = "1.0"
   spec.default_subspecs = 'Core'
   spec.source       = { :git => "https://github.com/QMUI/LookinServer.git", :tag => "1.2.7"}
   spec.framework  = "UIKit"

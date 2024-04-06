@@ -9,6 +9,7 @@ Pod::Spec.new do |spec|
   spec.ios.deployment_target  = "9.0"
   spec.tvos.deployment_target  = '9.0'
   spec.macos.deployment_target = "10.14"
+  spec.visionos.deployment_target = "1.0"
   spec.source       = { :git => "https://github.com/QMUI/LookinServer.git", :tag => "1.2.7"}
   #spec.framework  = "UIKit"
   spec.requires_arc = true
