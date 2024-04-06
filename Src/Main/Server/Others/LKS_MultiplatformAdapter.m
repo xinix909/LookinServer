@@ -40,6 +40,7 @@
 #endif
 }
 
+#if TARGET_OS_VISION
 + (UIWindowScene *)getFirstActiveWindowScene {
     for (UIScene *scene in UIApplication.sharedApplication.connectedScenes) {
         if (![scene isKindOfClass:UIWindowScene.class]) {
@@ -52,6 +53,7 @@
     }
     return nil;
 }
+#endif
 
 + (UIWindow *)keyWindow {
 #if TARGET_OS_VISION
