@@ -1,5 +1,5 @@
 //
-//  MultiplatformAdapter.m
+//  LKS_MultiplatformAdapter.m
 //  
 //
 //  Created by nixjiang on 2024/3/12.
@@ -7,10 +7,10 @@
 
 
 
-#import "MultiplatformAdapter.h"
+#import "LKS_MultiplatformAdapter.h"
 #import <UIKit/UIKit.h>
 
-@implementation MultiplatformAdapter
+@implementation LKS_MultiplatformAdapter
 
 + (BOOL)isiPad {
     static BOOL s_isiPad = NO;
@@ -26,7 +26,7 @@
 
 + (CGRect)mainScreenBounds {
 #if TARGET_OS_VISION
-    return [MultiplatformAdapter getFirstActiveWindowScene].coordinateSpace.bounds;
+    return [LKS_MultiplatformAdapter getFirstActiveWindowScene].coordinateSpace.bounds;
 #else
     return [UIScreen mainScreen].bounds;
 #endif
